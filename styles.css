@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
 }
 
-#projects{
+#projects,#contactme {
     background: #f5f5f5;
 }
 
@@ -188,4 +188,74 @@ h1, h2, h3, h4, h5, h6 {
 .project-text{
     height: 50%;
     padding: 0px 16px 16px 16px;
+}
+
+.skills-content{
+    background: #666;
+    
+    margin: 0 12.5%;
+    height: 600px;
+    border: 2px;
+    box-shadow: 2px;
+}
+
+.contact-me{
+    margin: 0 12.5% 100px 12.5%;
+}
+
+.contact-column{
+    float: left;
+    align-content: center;
+    width:50%;    
+    padding: 0 5%;
+}
+
+.mailme{
+    margin-left: 0%;
+    padding-left: 0%;
+}
+
+.contactinfo{
+    margin-right: 0%;
+    padding-right: 0%;
+}
+
+.contact-me::after{
+    content: "";
+    display: table;
+  clear: both;
+}
+
+#footer{
+    background: #333;
+    text-align: center;
+    position: relative;
+    /*margin: 0 12.5%;*/
+    /*margin-top: -250px;*/
+    padding: 0 12.5%;
+    /*height:500px;*/
+    color:white;
+    z-index: 0;
+}
+
+.contact-card{
+    width:100%;
+    background: white;
+    display: inline-block;
+    box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.50);
+    height: 355px;
+    z-index: 1;
+}
+.footer-container{
+    margin: 0 12.5%;
+}
+#copyright{
+    width: 50%;
+    /*background: #333;*/
+    float: left;
+}
+#social{
+    width: 50%;
+    /*background: #333;*/
+    float:right;
 }
