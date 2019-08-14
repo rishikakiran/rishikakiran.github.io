@@ -201,6 +201,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-me{
     margin: 0 12.5% 100px 12.5%;
+    height: 300px;
 }
 
 .contact-column{
@@ -220,24 +221,6 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 0%;
 }
 
-.contact-me::after{
-    content: "";
-    display: table;
-  clear: both;
-}
-
-#footer{
-    background: #333;
-    text-align: center;
-    position: relative;
-    /*margin: 0 12.5%;*/
-    /*margin-top: -250px;*/
-    padding: 0 12.5%;
-    /*height:500px;*/
-    color:white;
-    z-index: 0;
-}
-
 .contact-card{
     width:100%;
     background: white;
@@ -246,16 +229,50 @@ h1, h2, h3, h4, h5, h6 {
     height: 355px;
     z-index: 1;
 }
+
+.display-footer{
+    background: #333;
+    margin-top:-150px;
+    padding-top:150px;
+    height:200px;
+    z-index:-1;
+}
+
 .footer-container{
+    /*margin-top:150px;*/
+    width:100%;
     margin: 0 12.5%;
+    /*background: red;*/
+    color:white;
+    padding-bottom:0px;
 }
-#copyright{
-    width: 50%;
-    /*background: #333;*/
-    float: left;
+
+.left-foot{
+    padding-top:2px;
+    width:40%;
+    float:left;
 }
-#social{
-    width: 50%;
-    /*background: #333;*/
+
+.right-foot{
+    width:50%;
     float:right;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.social{
+    color: white;
+    cursor: pointer;
+    margin-right: 40px;
+    
+    /*height: 30px;
+    width:30px;*/
+    font-size: 25px;
+    font-weight: 600;
+
 }
