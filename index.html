@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./styles.css">        
+        <script type="text/javascript" src="./card-carousel.js"></script>
         <!--<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
         <script type="text/javascript">
             (function () {
@@ -19,12 +20,12 @@
 <body>
     <header id="header" class="">
         <div class="top-links">
-        <span class=""><a href="#info"><i class="fa fa-home">&nbsp;HOMEPAGE</i></a></span>
-        <span class="" ><a href="#education"><i class="fa fa-home">&nbsp;DETAILS</i></a></span>
-        <span class=""><a href="#projects"><i class="fa fa-home">&nbsp;PROJECTS </i></a></span>
-        <span class=""><a href="#skills"><i class="fa fa-home">&nbsp;SKILLS </i></a></span>
-        <span class=""><a href="#contactme"><i class="fa fa-home">&nbsp;CONTACT ME</i></a></span>
-       </div>
+            <span class=""><a href="#info"><i class="fa fa-home">&nbsp;HOMEPAGE</i></a></span>
+            <span class=""><a href="#education"><i class="fa fa-home">&nbsp;DETAILS</i></a></span>
+            <span class=""><a href="#projects"><i class="fa fa-home">&nbsp;PROJECTS </i></a></span>
+            <span class=""><a href="#skills"><i class="fa fa-home">&nbsp;SKILLS </i></a></span>
+            <span class=""><a href="#contactme"><i class="fa fa-home">&nbsp;CONTACT ME</i></a></span>
+        </div>
     </header>
     <section id="info">
         <div class="personalinfo">
@@ -87,48 +88,100 @@
         <div class=section-title>
             <h2>PROJECTS</h2>
         </div>
-        <div class="project-container">
-            <div class="column">
-                <div class="project-card">
-                    <img src="./assets/proj-container.jpg" class="project-image">
-                    <p class="project-text">
-                        Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.
-                        Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.
-                    </p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="project-card">
-                    <img src="./assets/proj-container.jpg" class="project-image">
-                    <p class="project-text">
-                        Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.
-                        Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.
-                    </p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="project-card">
-                    <img src="./assets/proj-container.jpg" class="project-image">
-                    <p class="project-text">
-                        Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.
-                        Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.
-                    </p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="project-card">
-                    <img src="./assets/proj-container.jpg" class="project-image">
-                    <p class="project-text">
-                        Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.
-                        Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.
-                    </p>
-                </div>
+        <div class="wrapper">
+            <ul id="carousel" data-target="carousel">
+                <li class="card" data-target="card">
+                    <div class="contents">
+                        <img src="./assets/proj-container.jpg" class="project-image">
+                        <p class="project-text">
+                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.
+                            Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.
+                        </p>
+                    </div>
+                </li>
+                <li class="card" data-target="card">
+                    <div class="contents">
+                        <img src="./assets/proj-container.jpg" class="project-image">
+                        <p class="project-text">
+                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.
+                            Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.
+                        </p>
+                    </div>
+                </li>
+                <li class="card" data-target="card">
+                    <div class="contents">
+                        <img src="./assets/proj-container.jpg" class="project-image">
+                        <p class="project-text">
+                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.
+                            Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.
+                        </p>
+                    </div>
+                </li>
+                <li class="card" data-target="card">
+                    <div class="contents">
+                        <img src="./assets/proj-container.jpg" class="project-image">
+                        <p class="project-text">
+                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.
+                            Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.
+                        </p>
+                    </div>
+                </li>
+                <li class="card" data-target="card">
+                    <div class="contents">
+                        <img src="./assets/proj-container.jpg" class="project-image">
+                        <p class="project-text">
+                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.
+                            Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.
+                        </p>
+                    </div>
+                </li>
+                <li class="card" data-target="card">
+                    <div class="contents">
+                        <img src="./assets/proj-container.jpg" class="project-image">
+                        <p class="project-text">
+                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.
+                            Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.
+                        </p>
+                    </div>
+                </li>
+                <li class="card" data-target="card">
+                    <div class="contents">
+                        <img src="./assets/proj-container.jpg" class="project-image">
+                        <p class="project-text">
+                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.
+                            Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.
+                        </p>
+                    </div>
+                </li>
+                <li class="card" data-target="card">
+                    <div class="contents">
+                        <img src="./assets/proj-container.jpg" class="project-image">
+                        <p class="project-text">
+                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.
+                            Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.
+                        </p>
+                    </div>
+                </li>
+                <li class="card" data-target="card">
+                    <div class="contents">
+                        <img src="./assets/proj-container.jpg" class="project-image">
+                        <p class="project-text">
+                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.
+                            Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div class="button-wrapper">
+                <button data-action="slideLeft">L</button>
+                <button data-action="slideRight">R</button>
             </div>
         </div>
         <div class=section-title>
             &nbsp;
         </div>
     </section>
+
     <section id="skills">
         <div class=section-title>
             <h2>SKILLS</h2>
