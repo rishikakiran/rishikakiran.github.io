@@ -10,9 +10,9 @@ body {
     overflow-x:hidden;
 }
 
-/*html{
+html{
     overflow-x:hidden;
-    }*/
+    }
     
 #header{
     top: 0;
@@ -28,6 +28,11 @@ body {
 .top-links{
     margin: 0 12.5%;
   align-items: center;
+}
+
+.header-tab{
+    align-content: center;
+    align-items: center;
 }
 
 .header-text{    

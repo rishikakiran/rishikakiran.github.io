@@ -12,10 +12,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
   window.onscroll = function() {
     var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-
+    // var scrollPosition=document.documentElement.scrollTop;
+    // var scrollPosition=Window.scrollY;
     for (i in sections) {
       if (sections[i] <= scrollPosition) {
-        document.querySelector('.active').setAttribute('class', ' ');
+        document.querySelector('.active').setAttribute('class', ' col-lg-offset-1 col-lg-2 header-tab');
         document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
       }
     }
