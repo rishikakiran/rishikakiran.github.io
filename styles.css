@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family:'sans-serif';
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -10,10 +10,6 @@ body {
     overflow-x:hidden;
 }
 
-html{
-    overflow-x:hidden;
-    }
-    
 #header{
     top: 0;
     width: 100%;
@@ -25,26 +21,41 @@ html{
     color:  #f5f5f5;
 }
 
+.sticky{
+    background: #fff;
+    /*-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.30);*/
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.30);
+}
+
 .top-links{
     margin: 0 12.5%;
   align-items: center;
 }
 
-.header-tab{
-    align-content: center;
-    align-items: center;
+.header-tab{       
+    color: #f5f5f5;
 }
 
-.header-text{    
-    color: #f5f5f5;
+.header-text{ 
     text-align: center;
     align-self: center;
     font-weight: 800;
 }
 
-.active{
-    border-bottom: 2px solid  #F2784B;
+a{
+    color:#f5f5f5;
 }
+
+.active{
+    color:  #F2784B;
+}
+
+/*
+
+PERSONAL INFO SECTION CSS
+
+*/
 
 .personalinfo{
     /*position: absolute;*/
@@ -185,28 +196,80 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     z-index: 1;
 }
+/*
+
+PROJECTS SECTION CSS
+
+*/
 
 #projects,#contactme {
     background: #f5f5f5;
+    overflow-x: hidden;
 }
 
-.wrapper {
+.project-body{
+    width:100%;
+    height: 400px;
+    display: inline-block;
+}
+
+.left-button-wrapper{
+    min-width:12.5%;
+    float:left;
+    min-height: 400px;
+    display: inline-block;    
+    padding: 150px 0;
+} 
+
+.wrapper 
+{
   min-height: 400px;
-  margin: 0 12.5%;
+  width:75%;
   position: relative;
   overflow: hidden;
-  /*margin: 0 auto;*/
+  display: inline-block;
+  padding-top: 5px;
 }
 
-.button-wrapper {
-  width: 100%;
-  height: 100%;
-  /*margin-right: 0 -5%;*/
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
+.right-button-wrapper{
+    min-width:12.5%;
+    float:right;
+    min-height: 400px;    
+    padding: 150px 0;
+    display: inline-block;
 }
+
+.leftButton{
+    float:right;
+    height:80px;    
+    width:80px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight:bold;
+    background: #F2784B;
+    color :#fff;
+    opacity: 0.9;
+    border: none;
+}
+
+.leftButton:hover, .rightButton:hover{
+    opacity: 1;
+}
+
+.rightButton{
+    /*height:100px;    
+    width:50px;*/
+     height:80px;    
+    width:80px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight:800;
+    background: #F2784B;
+    color :#f5f5f5;
+    opacity: 0.9;    
+    border: none;
+}
+
 
 #carousel {
   margin: 0;
@@ -246,6 +309,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0px 16px 16px 16px;
 }
 
+/*
+
+SKILLS SECTION
+
+*/
+
 .skills-content{
     background: #666;
     
@@ -254,6 +323,12 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px;
     box-shadow: 2px;
 }
+
+/*
+
+CONTACTS SECTION
+
+*/
 
 .contact-me{
     margin: 0 12.5% 100px 12.5%;
@@ -341,9 +416,10 @@ h1, h2, h3, h4, h5, h6 {
     padding-top:150px;
     height:200px;
     z-index:-1;
+    /**/
 }
 
-.footer-container{
+.container.footer-container{
     /*margin-top:150px;*/
     width:100%;
     margin: 0 12.5%;
@@ -359,3 +435,29 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 25px;
     font-weight: 600;
 }
+
+
+/*
+
+MEDIA QUERIES
+
+*/
+
+@media screen and (max-width: 1200px) {
+.card {
+    min-width:33.33%;
+    }
+
+};
+
+@media screen and (max-width: 992px) {
+  .card {
+    min-width:50%;
+  }
+};
+
+@media screen and (max-width: 797px) {
+  .card {
+    min-width:100%;
+  }
+};
