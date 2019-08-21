@@ -20,9 +20,5 @@ document.addEventListener('DOMContentLoaded', function(){
         document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
       }
     }
-
-    if(scrollPosition>50){
-        document.getElementById("#header").setAttribute('class','active');
-    }
   };
 }, false);
