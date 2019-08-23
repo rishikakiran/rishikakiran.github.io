@@ -456,20 +456,6 @@ CONTACTS SECTION
     text-align: center;
 }
 
-
-/*
-
-MEDIA QUERIES
-
-*/
-
-/*@media screen and (max-width: 1200px) {
-.card {
-    min-width:33.33%;  
-    }
-
-};*/
-
 @media screen and (max-width: 992px) {
 
 
