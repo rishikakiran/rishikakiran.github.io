@@ -319,39 +319,40 @@ SKILLS SECTION
 */
 
 .skills-content{
-    background: #555;
+    /*background: rgba(0, 0, 0, 0.36);*/
+    background: #333;
     padding:2%;
     margin: 0 12.5%;
-    height: 600px;
     border: 2px;
     box-shadow: 2px;
 }
 
+.skill-container{
+    margin:5px 5%;
+}
+
 .single-skill{
-    padding:20px;;
-    background: white;
+    padding:5px 25px;;
+    /*background: white;*/
 }
 
 .skill-heading{
-    font-size: 24px;
+    font-size: 20px;
+    color: #f5f5f5;
 }
 
 .meter{
     width: 100%;
-    background:#555;
-    border-radius: 12px;
-    height:25px;
+    background:#f5f5f5;
+    /*border-radius: 12px;*/
+    height:20px;
 
 }
 
 .meter > span {
   display: block;
   height: 100%;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  background-color: rgb(43,194,83);
+  background-color: #F2784B;
   background-image: linear-gradient(
     center bottom,
     rgb(43,194,83) 37%,
@@ -362,6 +363,11 @@ SKILLS SECTION
     inset 0 -2px 6px rgba(0,0,0,0.4);
   position: relative;
   overflow: hidden;
+}
+
+.skill-percent{
+    color : #fff;
+    float:right;
 }
 
 /*
@@ -438,16 +444,12 @@ CONTACTS SECTION
 .container.footer-container{
     padding: 10px;
     width:100%;
-    margin: 0 12.5%;
     color:white;
 }
 
 .social{
     color: white;
     cursor: pointer;
-    margin-left: 40px;
-    font-size: 25px;
-    font-weight: 600;
 }
 
 .text-center{
